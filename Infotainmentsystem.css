@@ -1,0 +1,322 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Impact, Haettenschweiler, Franklin Gothic Bold, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif;
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: auto;
+    grid-template-rows: 8vh auto 15vh;
+    height: 100vh;
+}
+header {
+    font-size: 2.5em;
+    grid-area: header;
+    background: gray;
+    padding: 0px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #000000a2;
+    display: grid;
+    grid-template-areas: "a a a";
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr;
+	position: center;
+	
+}
+main {
+    grid-area: main;
+    margin: 0px;
+	background-position: center;
+	background-repeat: no-repeat;
+    background-image: url('https://ih0.redbubble.net/image.399519259.4306/flat,550x550,075,f.u1.jpg');
+    padding: 30px;    
+    display: grid;
+    grid-template-areas: "a b c" "d e f";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    
+}
+
+main button{
+    
+    font-size: 2em;
+    padding: 20px;
+    border-style: solid;
+    background: white;
+}
+
+main div {
+	position: center;
+    margin: 5px;
+    font-size: 2em;
+    padding: 20px;
+    border-style: solid;
+    background: white;
+}
+
+main div.musiclibrary{
+    margin: 0px;
+    background: white;
+    border-style: solid;
+    font-size: 3em;
+	overflow: auto;
+	display: flex;
+	
+}
+
+li { display: block }
+
+ul{}
+
+main li.musik {
+	margin-right: 0px;
+    font-size: 2em;
+    padding: 0px;
+    border-style: solid;
+    background: white;
+	
+}
+
+
+main div.panel {
+	position: center;
+    margin: 40px;
+    font-size: 2em;
+    padding: 20px;
+    border-style: solid;
+    background: white;
+}
+
+main div.window {
+	margin-left: 5px;
+    font-size: 2em;
+    padding: 10px;
+    border-style: solid;
+    background: white;
+	display: grid;
+    grid-template-areas: "a a" "a a" "a a";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  auto;
+}
+
+main div.windowdiv {
+	
+    margin: 5px;
+    font-size: 1em;
+    padding: 10px;
+    border-style: solid;
+    background: white;
+	display: grid;
+    grid-template-areas: "a b" "c d";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  1fr 1fr;
+  
+}
+
+main div.Carlock {
+	margin-right: 5px;
+    font-size: 2em;
+    padding: 20px;
+    border-style: solid;
+    background: white;
+	display: grid;
+    grid-template-areas: "a" "a" "a";
+    grid-template-columns: 1fr;
+    grid-template-rows:  1fr 1fr 1fr;
+}
+
+
+main button.WindowOpen {
+	grid-area: c;
+   font-size: 1em;
+   padding: 5px;
+   
+}
+main button.WindowClose {
+	grid-area: d;
+   font-size: 1em;
+   padding: 5px;
+}
+
+main div.speed {
+    margin: 0px;
+    font-size: 3em;
+    padding: 20px;
+    border-style: solid;
+    background: white;
+	display: grid;
+}  
+main div.consumption {
+    margin: 0px;
+    font-size: 3em;
+    padding: 10px;
+    border-style: solid;
+    background: white;
+    object-fit: contain;
+	display: grid;
+    
+    
+} 
+main div.fuel {
+    margin: 0px;
+    font-size: 3em;
+    padding: 20px;
+    border-style: solid;
+    background: white;
+	display: grid;
+} 
+
+#App1 {
+    grid-area: a;
+    margin: 0px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcGjVR9O03LVywqtc5jH1LVXLSte1UKmcsUgNW__cfajmU8lv_&shttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcGjVR9O03LVywqtc5jH1LVXLSte1UKmcsUgNW__cfajmU8lv_&s');
+    background-size: contain;
+    background-position: center;
+    width:100%;
+    height:100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#App2 {
+    grid-area: b;
+    margin: 0px;
+    background-image: url('https://img.freepik.com/freie-ikonen/noten_318-9277.jpg?size=338&ext=jpg');
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    height:100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#App3 {
+    grid-area: c;
+    margin: 0px;
+	background: white;
+    background-image: url('https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX5745316.jpg');
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    height:100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#App4 {
+    grid-area: d;
+    margin: 0px;
+    background-image: url('https://static.thenounproject.com/png/100005-200.png');
+    /*background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5CsuKPhbLJUGzzBhzCogA1L1_99Fjfk6neB_m9irKBs3Tjg9x&s');*/
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    height:100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#App5 {
+    grid-area: e;
+    margin: 0px;
+    background: white;
+    /*background-image: url('https://cdn4.iconfinder.com/data/icons/vehicles-motorized/100/transport-vehicle-car-door-locked-512.png');
+    background-image: url('https://icon-library.net/images/car-window-icon/car-window-icon-14.jpg');*/
+    background-image: url('https://imageog.flaticon.com/icons/png/512/44/44594.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF');
+    background-size: contain;
+    background-position: center;
+    width:100%;
+    height:100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#App6 {
+    grid-area: f;
+    margin: 0px;
+    background: white;
+    background-image: url('https://cdn0.iconfinder.com/data/icons/sensors-and-probes/65/3-512.png');
+    background-size: contain;
+    background-position: center;
+    width:100%;
+    height:100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+footer {
+    grid-area: footer;
+    background: gray;
+    padding: 20px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #000000a2;
+    display: grid;
+    grid-template-areas: "a a a a a";
+    /*grid-template-columns: 3fr 2fr 2fr 2fr 12fr;*/
+	grid-template-columns: 3fr 2fr 3fr 2fr 11fr;
+    grid-template-rows: 1fr;
+}
+
+button {
+    background: white;
+    padding: 20px;
+    margin: 0px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+    font-size: 2em;
+}
+
+footer div.fadeOut {
+    opacity: 0;
+    transition: all ease 2s;
+    transition-delay: 2s;
+}
+
+footer div {
+    opacity: 1;
+    transition: all ease 0s;
+    transition-delay: 0s;
+}
+footer button {
+	width: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#Home{
+    background-image: url('https://imageog.flaticon.com/icons/png/512/25/25694.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF');
+	}
+
+#Play{
+	background-image: url('https://cdn3.iconfinder.com/data/icons/music-icons-4/100/pause-512.png');
+}
+
+#Back{
+	background-image: url('https://cdn4.iconfinder.com/data/icons/media-button/200/708-512.png');
+}
+
+#Next{
+    background-image: url('https://cdn4.iconfinder.com/data/icons/media-button/200/708-512.png');  
+    transform: rotate(180deg);
+}
+
+footer button.StopMusic {
+    width: auto;
+    background-image: url('https://cdn.onlinewebfonts.com/svg/img_497514.png');
+    background-size: cover;
+    background-position: center;
+}
